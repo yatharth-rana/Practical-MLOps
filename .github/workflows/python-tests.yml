@@ -2,7 +2,7 @@ name: Python Tests
 
 on:
     push:
-        branches: [main]
+        branches: [ main ]
     pull_request:
 
 jobs:
@@ -11,7 +11,7 @@ jobs:
 
         strategy:
             matrix:
-                python-version: [3.9, 3.10, 3.11]
+                python-version: ["3.9", "3.10", "3.11"]
 
         steps:
             - name: Checkout code
